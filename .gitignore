@@ -17,4 +17,5 @@ local.properties
 gen/
 out/
 *.log
-gradle-wrapper.jar
+
+
