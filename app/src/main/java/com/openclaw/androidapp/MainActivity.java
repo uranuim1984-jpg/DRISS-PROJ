@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
                 String ddgResponse = makeRequest(ddgUrl);
                 if (ddgResponse != null) {
                     JSONObject ddgJson = new JSONObject(ddgResponse);
-                    String abstract = ddgJson.optString("Abstract", "Pas de resultat");
-                    results.append("Resume: ").append(abstract).append("\n\n");
+                    String abstractText = ddgJson.optString("Abstract", "Pas de resultat");
+                    results.append("Resume: ").append(abstractText).append("\n\n");
 
                     JSONArray results2 = ddgJson.optJSONArray("Results");
                     if (results2 != null) {
